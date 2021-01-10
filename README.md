@@ -1,7 +1,4 @@
-# CodeChallenge
-
-
-# Steps to follow:
+Steps to follow:
 
 1. Clone this repo
 

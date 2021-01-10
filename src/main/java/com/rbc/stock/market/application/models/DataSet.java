@@ -5,7 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Index;
 import javax.persistence.Table;
 import javax.persistence.Version;
 
@@ -24,7 +23,7 @@ public class DataSet {
 	
 	@Version
 	
-	public long version; // to provide version number to client to enable optimistic locking
+	private long version; // to provide version number to client to enable optimistic locking
 
 	@Id
 	
@@ -32,71 +31,71 @@ public class DataSet {
 
 	@Column(name = "id")
 
-	public long id;
+	private long id;
 
 	@Column(name = "quarter")
 
-	public Integer quarter;
+	private Integer quarter;
 
 	@Column(name = "stock")
 	
-	public String stock;
+	private String stock;
 
 	@Column(name = "date")
 
-	public String date;
+	private String date;
 
 	@Column(name = "open")
 
-	public String open;
+	private String open;
 
 	@Column(name = "high")
 
-	public String high;
+	private String high;
 
 	@Column(name = "low")
 
-	public String low;
+	private String low;
 
 	@Column(name = "close")
 
-	public String close;
+	private String close;
 
 	@Column(name = "volume")
 
-	public String volume;
+	private String volume;
 
 	@Column(name = "percent_change_price")
 
-	public String percent_change_price;
+	private String percent_change_price;
 
 	@Column(name = "percent_chagne_volume_over_last_week")
 
-	public String percent_chagne_volume_over_last_week;
+	private String percent_chagne_volume_over_last_week;
 
 	@Column(name = "previous_weeks_volume")
 
-	public Integer previous_weeks_volume;
+	private Integer previous_weeks_volume;
 
 	@Column(name = "next_weeks_open")
 
-	public Integer next_weeks_open;
+	private Integer next_weeks_open;
 
 	@Column(name = "next_weeks_close")
 
-	public Integer next_weeks_close;
+	private Integer next_weeks_close;
 
 	@Column(name = "percent_change_next_weeks_price")
 
-	public Integer percent_change_next_weeks_price;
+	private Integer percent_change_next_weeks_price;
 
 	@Column(name = "days_to_next_dividend")
 
-	public Integer days_to_next_dividend;
+	private Integer days_to_next_dividend;
 
 	@Column(name = "percent_return_next_dividend")
 
-	public Integer percent_return_next_dividend;
+	private Integer percent_return_next_dividend;
 
 	public DataSet() {
 	}
