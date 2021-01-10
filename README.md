@@ -5,7 +5,7 @@
 
 1. Clone this repo
 
-git clone https://github.com/athiranairh/CodingChallenge.git
+git clone https://github.com/athiranairh/CodeChallenge.git
 
 
 
